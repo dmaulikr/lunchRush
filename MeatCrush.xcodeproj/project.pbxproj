@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		C568F7941F3CA22100646452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7931F3CA22100646452 /* AppDelegate.swift */; };
-		C568F7961F3CA22100646452 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C568F7951F3CA22100646452 /* GameScene.sks */; };
-		C568F7981F3CA22100646452 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = C568F7971F3CA22100646452 /* Actions.sks */; };
 		C568F79A1F3CA22100646452 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7991F3CA22100646452 /* GameScene.swift */; };
 		C568F79C1F3CA22100646452 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F79B1F3CA22100646452 /* GameViewController.swift */; };
 		C568F79F1F3CA22100646452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C568F79D1F3CA22100646452 /* Main.storyboard */; };
 		C568F7A11F3CA22100646452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C568F7A01F3CA22100646452 /* Assets.xcassets */; };
 		C568F7A41F3CA22100646452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C568F7A21F3CA22100646452 /* LaunchScreen.storyboard */; };
 		C568F7AF1F3CA22100646452 /* MeatCrushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7AE1F3CA22100646452 /* MeatCrushTests.swift */; };
+		C568F7BA1F3CA2FB00646452 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C568F7B91F3CA2FB00646452 /* Sprites.atlas */; };
+		C568F7BC1F3CA46400646452 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7BB1F3CA46400646452 /* Cookie.swift */; };
+		C568F7BE1F3CA5BD00646452 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7BD1F3CA5BD00646452 /* Array2D.swift */; };
+		C568F7C01F3CA67C00646452 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7BF1F3CA67C00646452 /* Level.swift */; };
+		C568F7C41F3CA9A900646452 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7C31F3CA9A900646452 /* Tile.swift */; };
+		C568F7C61F3CAB1000646452 /* JSONtoDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7C51F3CAB1000646452 /* JSONtoDict.swift */; };
+		C568F7C81F3CCA2E00646452 /* Levels in Resources */ = {isa = PBXBuildFile; fileRef = C568F7C71F3CCA2E00646452 /* Levels */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +36,6 @@
 /* Begin PBXFileReference section */
 		C568F7901F3CA22100646452 /* MeatCrush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeatCrush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C568F7931F3CA22100646452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C568F7951F3CA22100646452 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		C568F7971F3CA22100646452 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		C568F7991F3CA22100646452 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		C568F79B1F3CA22100646452 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C568F79E1F3CA22100646452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +45,13 @@
 		C568F7AA1F3CA22100646452 /* MeatCrushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeatCrushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C568F7AE1F3CA22100646452 /* MeatCrushTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatCrushTests.swift; sourceTree = "<group>"; };
 		C568F7B01F3CA22100646452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C568F7B91F3CA2FB00646452 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Sprites.atlas; path = ../../../Downloads/Resources/Sprites.atlas; sourceTree = "<group>"; };
+		C568F7BB1F3CA46400646452 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		C568F7BD1F3CA5BD00646452 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		C568F7BF1F3CA67C00646452 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		C568F7C31F3CA9A900646452 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tile.swift; path = ../Tile.swift; sourceTree = "<group>"; };
+		C568F7C51F3CAB1000646452 /* JSONtoDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONtoDict.swift; sourceTree = "<group>"; };
+		C568F7C71F3CCA2E00646452 /* Levels */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Levels; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +94,18 @@
 			isa = PBXGroup;
 			children = (
 				C568F7931F3CA22100646452 /* AppDelegate.swift */,
-				C568F7951F3CA22100646452 /* GameScene.sks */,
-				C568F7971F3CA22100646452 /* Actions.sks */,
-				C568F7991F3CA22100646452 /* GameScene.swift */,
 				C568F79B1F3CA22100646452 /* GameViewController.swift */,
-				C568F79D1F3CA22100646452 /* Main.storyboard */,
+				C568F7991F3CA22100646452 /* GameScene.swift */,
+				C568F7BB1F3CA46400646452 /* Cookie.swift */,
+				C568F7BF1F3CA67C00646452 /* Level.swift */,
+				C568F7C51F3CAB1000646452 /* JSONtoDict.swift */,
+				C568F7BD1F3CA5BD00646452 /* Array2D.swift */,
+				C568F7C31F3CA9A900646452 /* Tile.swift */,
 				C568F7A01F3CA22100646452 /* Assets.xcassets */,
+				C568F7C71F3CCA2E00646452 /* Levels */,
+				C568F7B91F3CA2FB00646452 /* Sprites.atlas */,
 				C568F7A21F3CA22100646452 /* LaunchScreen.storyboard */,
+				C568F79D1F3CA22100646452 /* Main.storyboard */,
 				C568F7A51F3CA22100646452 /* Info.plist */,
 			);
 			path = MeatCrush;
@@ -190,11 +205,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C568F7C81F3CCA2E00646452 /* Levels in Resources */,
+				C568F7BA1F3CA2FB00646452 /* Sprites.atlas in Resources */,
 				C568F79F1F3CA22100646452 /* Main.storyboard in Resources */,
-				C568F7961F3CA22100646452 /* GameScene.sks in Resources */,
 				C568F7A11F3CA22100646452 /* Assets.xcassets in Resources */,
 				C568F7A41F3CA22100646452 /* LaunchScreen.storyboard in Resources */,
-				C568F7981F3CA22100646452 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,9 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C568F7C01F3CA67C00646452 /* Level.swift in Sources */,
 				C568F79A1F3CA22100646452 /* GameScene.swift in Sources */,
+				C568F7BC1F3CA46400646452 /* Cookie.swift in Sources */,
+				C568F7C41F3CA9A900646452 /* Tile.swift in Sources */,
+				C568F7C61F3CAB1000646452 /* JSONtoDict.swift in Sources */,
 				C568F79C1F3CA22100646452 /* GameViewController.swift in Sources */,
 				C568F7941F3CA22100646452 /* AppDelegate.swift in Sources */,
+				C568F7BE1F3CA5BD00646452 /* Array2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
