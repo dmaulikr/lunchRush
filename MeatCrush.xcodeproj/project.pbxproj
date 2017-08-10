@@ -21,6 +21,13 @@
 		C568F7C41F3CA9A900646452 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7C31F3CA9A900646452 /* Tile.swift */; };
 		C568F7C61F3CAB1000646452 /* JSONtoDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7C51F3CAB1000646452 /* JSONtoDict.swift */; };
 		C568F7C81F3CCA2E00646452 /* Levels in Resources */ = {isa = PBXBuildFile; fileRef = C568F7C71F3CCA2E00646452 /* Levels */; };
+		C568F7CA1F3CDEB100646452 /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7C91F3CDEB100646452 /* Swap.swift */; };
+		C568F7D21F3D1DB400646452 /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = C568F7CC1F3D1DB400646452 /* Chomp.wav */; };
+		C568F7D31F3D1DB400646452 /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = C568F7CD1F3D1DB400646452 /* Drip.wav */; };
+		C568F7D41F3D1DB400646452 /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = C568F7CE1F3D1DB400646452 /* Error.wav */; };
+		C568F7D51F3D1DB400646452 /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = C568F7CF1F3D1DB400646452 /* Ka-Ching.wav */; };
+		C568F7D61F3D1DB400646452 /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C568F7D01F3D1DB400646452 /* Mining by Moonlight.mp3 */; };
+		C568F7D71F3D1DB400646452 /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = C568F7D11F3D1DB400646452 /* Scrape.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,13 @@
 		C568F7C31F3CA9A900646452 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tile.swift; path = ../Tile.swift; sourceTree = "<group>"; };
 		C568F7C51F3CAB1000646452 /* JSONtoDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONtoDict.swift; sourceTree = "<group>"; };
 		C568F7C71F3CCA2E00646452 /* Levels */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Levels; sourceTree = "<group>"; };
+		C568F7C91F3CDEB100646452 /* Swap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Swap.swift; path = ../Swap.swift; sourceTree = "<group>"; };
+		C568F7CC1F3D1DB400646452 /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
+		C568F7CD1F3D1DB400646452 /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
+		C568F7CE1F3D1DB400646452 /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
+		C568F7CF1F3D1DB400646452 /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
+		C568F7D01F3D1DB400646452 /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
+		C568F7D11F3D1DB400646452 /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +111,13 @@
 				C568F79B1F3CA22100646452 /* GameViewController.swift */,
 				C568F7991F3CA22100646452 /* GameScene.swift */,
 				C568F7BB1F3CA46400646452 /* Cookie.swift */,
+				C568F7C91F3CDEB100646452 /* Swap.swift */,
 				C568F7BF1F3CA67C00646452 /* Level.swift */,
 				C568F7C51F3CAB1000646452 /* JSONtoDict.swift */,
 				C568F7BD1F3CA5BD00646452 /* Array2D.swift */,
 				C568F7C31F3CA9A900646452 /* Tile.swift */,
 				C568F7A01F3CA22100646452 /* Assets.xcassets */,
+				C568F7CB1F3D1DB400646452 /* Sounds */,
 				C568F7C71F3CCA2E00646452 /* Levels */,
 				C568F7B91F3CA2FB00646452 /* Sprites.atlas */,
 				C568F7A21F3CA22100646452 /* LaunchScreen.storyboard */,
@@ -118,6 +134,19 @@
 				C568F7B01F3CA22100646452 /* Info.plist */,
 			);
 			path = MeatCrushTests;
+			sourceTree = "<group>";
+		};
+		C568F7CB1F3D1DB400646452 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C568F7CC1F3D1DB400646452 /* Chomp.wav */,
+				C568F7CD1F3D1DB400646452 /* Drip.wav */,
+				C568F7CE1F3D1DB400646452 /* Error.wav */,
+				C568F7CF1F3D1DB400646452 /* Ka-Ching.wav */,
+				C568F7D01F3D1DB400646452 /* Mining by Moonlight.mp3 */,
+				C568F7D11F3D1DB400646452 /* Scrape.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,10 +235,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C568F7C81F3CCA2E00646452 /* Levels in Resources */,
+				C568F7D31F3D1DB400646452 /* Drip.wav in Resources */,
 				C568F7BA1F3CA2FB00646452 /* Sprites.atlas in Resources */,
+				C568F7D61F3D1DB400646452 /* Mining by Moonlight.mp3 in Resources */,
+				C568F7D71F3D1DB400646452 /* Scrape.wav in Resources */,
 				C568F79F1F3CA22100646452 /* Main.storyboard in Resources */,
 				C568F7A11F3CA22100646452 /* Assets.xcassets in Resources */,
+				C568F7D51F3D1DB400646452 /* Ka-Ching.wav in Resources */,
+				C568F7D21F3D1DB400646452 /* Chomp.wav in Resources */,
 				C568F7A41F3CA22100646452 /* LaunchScreen.storyboard in Resources */,
+				C568F7D41F3D1DB400646452 /* Error.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +270,7 @@
 				C568F79C1F3CA22100646452 /* GameViewController.swift in Sources */,
 				C568F7941F3CA22100646452 /* AppDelegate.swift in Sources */,
 				C568F7BE1F3CA5BD00646452 /* Array2D.swift in Sources */,
+				C568F7CA1F3CDEB100646452 /* Swap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
