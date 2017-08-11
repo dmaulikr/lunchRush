@@ -28,6 +28,7 @@
 		C568F7D51F3D1DB400646452 /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = C568F7CF1F3D1DB400646452 /* Ka-Ching.wav */; };
 		C568F7D61F3D1DB400646452 /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C568F7D01F3D1DB400646452 /* Mining by Moonlight.mp3 */; };
 		C568F7D71F3D1DB400646452 /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = C568F7D11F3D1DB400646452 /* Scrape.wav */; };
+		C5E7DF811F3D1FB60020E944 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7DF801F3D1FB60020E944 /* Chain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		C568F7CF1F3D1DB400646452 /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
 		C568F7D01F3D1DB400646452 /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
 		C568F7D11F3D1DB400646452 /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		C5E7DF801F3D1FB60020E944 /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				C568F7931F3CA22100646452 /* AppDelegate.swift */,
 				C568F79B1F3CA22100646452 /* GameViewController.swift */,
+				C5E7DF801F3D1FB60020E944 /* Chain.swift */,
 				C568F7991F3CA22100646452 /* GameScene.swift */,
 				C568F7BB1F3CA46400646452 /* Cookie.swift */,
 				C568F7C91F3CDEB100646452 /* Swap.swift */,
@@ -267,6 +270,7 @@
 				C568F7BC1F3CA46400646452 /* Cookie.swift in Sources */,
 				C568F7C41F3CA9A900646452 /* Tile.swift in Sources */,
 				C568F7C61F3CAB1000646452 /* JSONtoDict.swift in Sources */,
+				C5E7DF811F3D1FB60020E944 /* Chain.swift in Sources */,
 				C568F79C1F3CA22100646452 /* GameViewController.swift in Sources */,
 				C568F7941F3CA22100646452 /* AppDelegate.swift in Sources */,
 				C568F7BE1F3CA5BD00646452 /* Array2D.swift in Sources */,
@@ -482,6 +486,7 @@
 				C568F7B51F3CA22100646452 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C568F7B61F3CA22100646452 /* Build configuration list for PBXNativeTarget "MeatCrushTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				C568F7B81F3CA22100646452 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
