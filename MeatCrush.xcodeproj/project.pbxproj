@@ -29,6 +29,7 @@
 		C568F7D61F3D1DB400646452 /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C568F7D01F3D1DB400646452 /* Mining by Moonlight.mp3 */; };
 		C568F7D71F3D1DB400646452 /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = C568F7D11F3D1DB400646452 /* Scrape.wav */; };
 		C5E7DF811F3D1FB60020E944 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7DF801F3D1FB60020E944 /* Chain.swift */; };
+		C5EB01CA1F3DFFEF0060F19D /* Grid.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C5EB01C91F3DFFEF0060F19D /* Grid.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		C568F7D01F3D1DB400646452 /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
 		C568F7D11F3D1DB400646452 /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
 		C5E7DF801F3D1FB60020E944 /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
+		C5EB01C91F3DFFEF0060F19D /* Grid.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Grid.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				C568F7BD1F3CA5BD00646452 /* Array2D.swift */,
 				C568F7C31F3CA9A900646452 /* Tile.swift */,
 				C568F7A01F3CA22100646452 /* Assets.xcassets */,
+				C5EB01C91F3DFFEF0060F19D /* Grid.atlas */,
 				C568F7CB1F3D1DB400646452 /* Sounds */,
 				C568F7C71F3CCA2E00646452 /* Levels */,
 				C568F7B91F3CA2FB00646452 /* Sprites.atlas */,
@@ -244,6 +247,7 @@
 				C568F7D71F3D1DB400646452 /* Scrape.wav in Resources */,
 				C568F79F1F3CA22100646452 /* Main.storyboard in Resources */,
 				C568F7A11F3CA22100646452 /* Assets.xcassets in Resources */,
+				C5EB01CA1F3DFFEF0060F19D /* Grid.atlas in Resources */,
 				C568F7D51F3D1DB400646452 /* Ka-Ching.wav in Resources */,
 				C568F7D21F3D1DB400646452 /* Chomp.wav in Resources */,
 				C568F7A41F3CA22100646452 /* LaunchScreen.storyboard in Resources */,

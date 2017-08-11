@@ -10,10 +10,19 @@ import Foundation
 
 let NumColumns = 9
 let NumRows = 9
+let NumLevels = 4
 
 class Level {
     
+    // properties
+    
     private var possibleSwaps = Set<Swap>()
+    var targetScore = 0
+    var maximumMoves = 0
+
+    fileprivate var cookies = Array2D<Cookie>(columns: NumColumns, rows: NumRows)
+    private var tiles = Array2D<Tile>(columns: NumColumns, rows: NumRows)
+    private var comboMultiplier = 0
     
     init(filename: String) {
         guard let dictionary = Dictionary<String, AnyObject>.loadJSONFromBundle(filename: filename) else { return }
@@ -26,10 +35,9 @@ class Level {
                 }
             }
         }
+        targetScore = dictionary["targetScore"] as! Int
+        maximumMoves = dictionary["moves"] as! Int
     }
-    
-    fileprivate var cookies = Array2D<Cookie>(columns: NumColumns, rows: NumRows)
-    private var tiles = Array2D<Tile>(columns: NumColumns, rows: NumRows)
 
     func cookieAt(column: Int, row: Int) -> Cookie? {
         assert(column >= 0 && column < NumColumns)
@@ -234,6 +242,7 @@ class Level {
         }
         return set
     }
+    
     func removeMatches() -> Set<Chain> {
         
         let horizontalChains = detectHorizontalMatches()
@@ -241,9 +250,12 @@ class Level {
         
         removeCookies(chains: horizontalChains)
         removeCookies(chains: verticalChains)
+        calculateScores(for: horizontalChains)
+        calculateScores(for: verticalChains)
         
         return horizontalChains.union(verticalChains)
     }
+    
     private func removeCookies(chains: Set<Chain>) {
         for chain in chains {
             for cookie in chain.cookies {
@@ -251,6 +263,7 @@ class Level {
             }
         }
     }
+    
     func fillHoles() -> [[Cookie]] {
         var columns = [[Cookie]]()
         // 1
@@ -281,6 +294,7 @@ class Level {
         }
         return columns
     }
+    
     func topUpCookies() -> [[Cookie]] {
         var columns = [[Cookie]]()
         var cookieType: CookieType = .unknown
@@ -313,5 +327,16 @@ class Level {
             }
         }
         return columns
+    }
+    
+    private func calculateScores(for chains: Set<Chain>) {
+        // 3-chain is 60 pts, 4-chain is 120, 5-chain is 180, and so on
+        for chain in chains {
+            chain.score = 60 * (chain.length - 2) * comboMultiplier
+            comboMultiplier += 1
+        }
+    }
+    func resetComboMultiplier() {
+        comboMultiplier = 1
     }
 }
