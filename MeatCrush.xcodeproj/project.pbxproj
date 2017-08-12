@@ -31,6 +31,9 @@
 		C5E7DF811F3D1FB60020E944 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7DF801F3D1FB60020E944 /* Chain.swift */; };
 		C5EB01CA1F3DFFEF0060F19D /* Grid.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C5EB01C91F3DFFEF0060F19D /* Grid.atlas */; };
 		C5EB01CD1F3E2DCC0060F19D /* Meats.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C5EB01CC1F3E2DCC0060F19D /* Meats.atlas */; };
+		C5EB01CF1F3F73CF0060F19D /* BoarsHead.png in Resources */ = {isa = PBXBuildFile; fileRef = C5EB01CE1F3F73CF0060F19D /* BoarsHead.png */; };
+		C5EB01D11F3F75390060F19D /* BHLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C5EB01D01F3F75390060F19D /* BHLogo.png */; };
+		C5EB01D31F3F75ED0060F19D /* BHLogo_BlackText.png in Resources */ = {isa = PBXBuildFile; fileRef = C5EB01D21F3F75ED0060F19D /* BHLogo_BlackText.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		C5E7DF801F3D1FB60020E944 /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
 		C5EB01C91F3DFFEF0060F19D /* Grid.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Grid.atlas; sourceTree = "<group>"; };
 		C5EB01CC1F3E2DCC0060F19D /* Meats.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Meats.atlas; sourceTree = "<group>"; };
+		C5EB01CE1F3F73CF0060F19D /* BoarsHead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoarsHead.png; sourceTree = "<group>"; };
+		C5EB01D01F3F75390060F19D /* BHLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BHLogo.png; sourceTree = "<group>"; };
+		C5EB01D21F3F75ED0060F19D /* BHLogo_BlackText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BHLogo_BlackText.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,9 @@
 				C5E7DF801F3D1FB60020E944 /* Chain.swift */,
 				C568F7991F3CA22100646452 /* GameScene.swift */,
 				C568F7BB1F3CA46400646452 /* Cookie.swift */,
+				C5EB01CE1F3F73CF0060F19D /* BoarsHead.png */,
+				C5EB01D01F3F75390060F19D /* BHLogo.png */,
+				C5EB01D21F3F75ED0060F19D /* BHLogo_BlackText.png */,
 				C568F7C91F3CDEB100646452 /* Swap.swift */,
 				C568F7BF1F3CA67C00646452 /* Level.swift */,
 				C568F7C51F3CAB1000646452 /* JSONtoDict.swift */,
@@ -246,12 +255,15 @@
 				C568F7C81F3CCA2E00646452 /* Levels in Resources */,
 				C568F7D31F3D1DB400646452 /* Drip.wav in Resources */,
 				C568F7BA1F3CA2FB00646452 /* Sprites.atlas in Resources */,
+				C5EB01D31F3F75ED0060F19D /* BHLogo_BlackText.png in Resources */,
 				C568F7D61F3D1DB400646452 /* Mining by Moonlight.mp3 in Resources */,
 				C568F7D71F3D1DB400646452 /* Scrape.wav in Resources */,
 				C568F79F1F3CA22100646452 /* Main.storyboard in Resources */,
 				C568F7A11F3CA22100646452 /* Assets.xcassets in Resources */,
 				C5EB01CA1F3DFFEF0060F19D /* Grid.atlas in Resources */,
+				C5EB01D11F3F75390060F19D /* BHLogo.png in Resources */,
 				C568F7D51F3D1DB400646452 /* Ka-Ching.wav in Resources */,
+				C5EB01CF1F3F73CF0060F19D /* BoarsHead.png in Resources */,
 				C5EB01CD1F3E2DCC0060F19D /* Meats.atlas in Resources */,
 				C568F7D21F3D1DB400646452 /* Chomp.wav in Resources */,
 				C568F7A41F3CA22100646452 /* LaunchScreen.storyboard in Resources */,

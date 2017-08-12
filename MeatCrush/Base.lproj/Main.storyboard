@@ -107,12 +107,25 @@
                                     <action selector="shuffleButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="0b2-EE-si5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJE-Kh-Ehu" userLabel="GetRecipe Button">
+                                <rect key="frame" x="141.5" y="88" width="93" height="51"/>
+                                <color key="backgroundColor" red="0.1675378680229187" green="0.51472508907318115" blue="0.087124921381473541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="1As-Zh-qlg"/>
+                                    <constraint firstAttribute="height" constant="51" id="Hme-wU-RYN"/>
+                                </constraints>
+                                <state key="normal" image="BHLogo.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="uJE-Kh-Ehu" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="0Oy-xN-mj5"/>
                             <constraint firstItem="7Ko-GG-TN6" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="8" id="1xb-JH-bvr"/>
                             <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="0DY-Ct-LTv" secondAttribute="bottom" constant="20" id="3lI-Aw-5sm"/>
                             <constraint firstItem="0DY-Ct-LTv" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="EKx-tz-ETk"/>
+                            <constraint firstItem="uJE-Kh-Ehu" firstAttribute="top" secondItem="7Ko-GG-TN6" secondAttribute="bottom" constant="8" id="MFB-SY-WD9"/>
                             <constraint firstItem="7Ko-GG-TN6" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="20" id="e83-F4-r67"/>
                             <constraint firstAttribute="trailing" secondItem="s3H-tD-AKs" secondAttribute="trailing" id="eul-vJ-ksM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7Ko-GG-TN6" secondAttribute="trailing" constant="8" id="oLY-rN-YnC"/>
@@ -130,6 +143,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="152.80000000000001" y="-128.18590704647679"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BHLogo.png" width="411" height="227"/>
+    </resources>
 </document>
