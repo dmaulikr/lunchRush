@@ -78,7 +78,6 @@ class GameViewController: UIViewController {
         shuffleButton.isHidden = true
         shuffleButton.layer.cornerRadius = 8
         shuffleButton.layer.borderWidth = 1
-        shuffleButton.layer.
         skView.presentScene(scene)
         beginGame()
     }
