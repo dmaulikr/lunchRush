@@ -138,6 +138,7 @@
                     </view>
                     <connections>
                         <outlet property="gameOverPanel" destination="s3H-tD-AKs" id="SKA-WD-VfF"/>
+                        <outlet property="getRecipeButton" destination="uJE-Kh-Ehu" id="XGu-K8-gUg"/>
                         <outlet property="movesLabel" destination="cp8-f5-7av" id="pCW-Z1-scl"/>
                         <outlet property="scoreLabel" destination="zRI-gK-NHU" id="l48-dA-dv7"/>
                         <outlet property="shuffleButton" destination="0DY-Ct-LTv" id="G5C-YY-hDT"/>
@@ -159,8 +160,39 @@
                     <view key="view" contentMode="scaleToFill" id="Tea-vb-YKQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1bz-cA-WT6">
+                                <rect key="frame" x="16" y="20" width="343" height="639"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ZU-OJ-JJg" userLabel="RecipeImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="213"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-eL-8SZ" userLabel="Ingredients">
+                                        <rect key="frame" x="0.0" y="213" width="343" height="213"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YnO-IV-R62" userLabel="Instructions">
+                                        <rect key="frame" x="0.0" y="426" width="343" height="213"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YnO-IV-R62" firstAttribute="height" secondItem="4ZU-OJ-JJg" secondAttribute="height" id="lsH-Lt-7Vd"/>
+                                    <constraint firstItem="Vi9-eL-8SZ" firstAttribute="height" secondItem="4ZU-OJ-JJg" secondAttribute="height" id="qQu-fM-1ya"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1bz-cA-WT6" firstAttribute="top" secondItem="9ky-ec-kes" secondAttribute="bottom" id="5ab-cu-4qy"/>
+                            <constraint firstItem="LIa-aB-YqG" firstAttribute="top" secondItem="1bz-cA-WT6" secondAttribute="bottom" constant="8" id="Xoa-83-VmN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1bz-cA-WT6" secondAttribute="trailing" id="vq8-vp-i8I"/>
+                            <constraint firstItem="1bz-cA-WT6" firstAttribute="leading" secondItem="Tea-vb-YKQ" secondAttribute="leadingMargin" id="wJd-5q-RPl"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recipeImage" destination="4ZU-OJ-JJg" id="3x7-C1-XXp"/>
+                        <outlet property="recipeIngredients" destination="Vi9-eL-8SZ" id="Sex-7o-1EW"/>
+                        <outlet property="recipeInstructions" destination="YnO-IV-R62" id="3YU-KD-sqv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GrQ-ZF-Yhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

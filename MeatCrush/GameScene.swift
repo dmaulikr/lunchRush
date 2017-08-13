@@ -29,6 +29,8 @@ class GameScene: SKScene {
     let cookiesLayer = SKNode()
     let cropLayer = SKCropNode()
     let maskLayer = SKNode()
+    var background: SKSpriteNode!
+    // var currentLevelNum: Int!
     
     // initializers
     
@@ -36,12 +38,11 @@ class GameScene: SKScene {
         fatalError("init(coder) is not used in this app")
     }
     
-    override init(size: CGSize) {
+    init(size: CGSize, level: Level) {
         super.init(size: size)
-        
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        
-        let background = SKSpriteNode(imageNamed: "BackgroundMac")
+        print("GameScene.init")
+        let background = SKSpriteNode(imageNamed: level.imageNamed)
         background.size = size
         addChild(background)
         addChild(gameLayer)

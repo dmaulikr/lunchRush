@@ -19,6 +19,7 @@ class Level {
     private var possibleSwaps = Set<Swap>()
     var targetScore = 0
     var maximumMoves = 0
+    var imageNamed: String!
 
     fileprivate var cookies = Array2D<Cookie>(columns: NumColumns, rows: NumRows)
     private var tiles = Array2D<Tile>(columns: NumColumns, rows: NumRows)
@@ -37,6 +38,7 @@ class Level {
         }
         targetScore = dictionary["targetScore"] as! Int
         maximumMoves = dictionary["moves"] as! Int
+        imageNamed = dictionary["imageNamed"] as! String
     }
 
     func cookieAt(column: Int, row: Int) -> Cookie? {

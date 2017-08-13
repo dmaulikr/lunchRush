@@ -20,6 +20,10 @@ class GameViewController: UIViewController {
     var score = 0
     var tapGestureRecognizer: UITapGestureRecognizer!
     var currentLevelNum = 1
+    var recipeButtonColor: [Int:UIColor] = [1:UIColor.darkGray.withAlphaComponent(0.3),
+                                            2:UIColor(rgb: 0x2A751C),
+                                            3:UIColor.brown.withAlphaComponent(0.8),
+                                            4:UIColor.brown.withAlphaComponent(0.5)]
     
     lazy var backgroundMusic: AVAudioPlayer? = {
         guard let url = Bundle.main.url(forResource: "Mining by Moonlight", withExtension: "mp3") else {
@@ -41,6 +45,8 @@ class GameViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var gameOverPanel: UIImageView!
     @IBOutlet weak var shuffleButton: UIButton!
+    @IBOutlet weak var getRecipeButton: UIButton!
+    
     @IBAction func shuffleButtonPressed(_: AnyObject) {
         shuffle()
         decrementMoves()
@@ -64,13 +70,18 @@ class GameViewController: UIViewController {
         setupLevel(levelNum: currentLevelNum)
         backgroundMusic?.play()
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let recipeViewController = segue.destination as! RecipeViewController
+        recipeViewController.currentLevelNum = currentLevelNum
+    }
     
     func setupLevel(levelNum: Int) {
         let skView = view as! SKView
         skView.isMultipleTouchEnabled = false
-        scene = GameScene(size: skView.bounds.size)
-        scene.scaleMode = .aspectFill
         level = Level(filename: "Level_\(levelNum)")
+        getRecipeButton.backgroundColor = recipeButtonColor[levelNum]
+        scene = GameScene(size: skView.bounds.size, level: level)
+        scene.scaleMode = .aspectFill
         scene.level = level
         scene.addTiles()
         scene.swipeHandler = handleSwipe
@@ -144,6 +155,7 @@ class GameViewController: UIViewController {
     func decrementMoves() {
         if score >= level.targetScore {
             gameOverPanel.image = UIImage(named: "LevelComplete")
+            currentLevelNum = currentLevelNum < NumLevels ? currentLevelNum+1 : 1
             showGameOver()
         } else if movesLeft == 0 {
             gameOverPanel.image = UIImage(named: "GameOver")
@@ -151,7 +163,7 @@ class GameViewController: UIViewController {
         }
         movesLeft -= 1
         updateLabels()
-        currentLevelNum = currentLevelNum < NumLevels ? currentLevelNum+1 : 1
+        // currentLevelNum = currentLevelNum < NumLevels ? currentLevelNum+1 : 1
     }
     func showGameOver() {
         gameOverPanel.isHidden = false
