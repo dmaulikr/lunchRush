@@ -117,6 +117,9 @@
                                 <state key="normal" image="BHLogo.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="VTP-wo-aXy" kind="presentation" id="3nh-7b-fjj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -144,6 +147,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="152.80000000000001" y="-128.18590704647679"/>
+        </scene>
+        <!--Recipe View Controller-->
+        <scene sceneID="vNH-wC-uuh">
+            <objects>
+                <viewController id="VTP-wo-aXy" customClass="RecipeViewController" customModule="MeatCrush" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ky-ec-kes"/>
+                        <viewControllerLayoutGuide type="bottom" id="LIa-aB-YqG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tea-vb-YKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GrQ-ZF-Yhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850" y="-128"/>
         </scene>
     </scenes>
     <resources>

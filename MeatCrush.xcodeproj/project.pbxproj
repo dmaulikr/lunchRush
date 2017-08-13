@@ -34,6 +34,7 @@
 		C5EB01CF1F3F73CF0060F19D /* BoarsHead.png in Resources */ = {isa = PBXBuildFile; fileRef = C5EB01CE1F3F73CF0060F19D /* BoarsHead.png */; };
 		C5EB01D11F3F75390060F19D /* BHLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C5EB01D01F3F75390060F19D /* BHLogo.png */; };
 		C5EB01D31F3F75ED0060F19D /* BHLogo_BlackText.png in Resources */ = {isa = PBXBuildFile; fileRef = C5EB01D21F3F75ED0060F19D /* BHLogo_BlackText.png */; };
+		C5EB01D51F3F7EDE0060F19D /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EB01D41F3F7EDE0060F19D /* RecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		C5EB01CE1F3F73CF0060F19D /* BoarsHead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoarsHead.png; sourceTree = "<group>"; };
 		C5EB01D01F3F75390060F19D /* BHLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BHLogo.png; sourceTree = "<group>"; };
 		C5EB01D21F3F75ED0060F19D /* BHLogo_BlackText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BHLogo_BlackText.png; sourceTree = "<group>"; };
+		C5EB01D41F3F7EDE0060F19D /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				C568F7931F3CA22100646452 /* AppDelegate.swift */,
 				C568F79B1F3CA22100646452 /* GameViewController.swift */,
 				C5E7DF801F3D1FB60020E944 /* Chain.swift */,
+				C5EB01D41F3F7EDE0060F19D /* RecipeViewController.swift */,
 				C568F7991F3CA22100646452 /* GameScene.swift */,
 				C568F7BB1F3CA46400646452 /* Cookie.swift */,
 				C5EB01CE1F3F73CF0060F19D /* BoarsHead.png */,
@@ -290,6 +293,7 @@
 				C568F7BC1F3CA46400646452 /* Cookie.swift in Sources */,
 				C568F7C41F3CA9A900646452 /* Tile.swift in Sources */,
 				C568F7C61F3CAB1000646452 /* JSONtoDict.swift in Sources */,
+				C5EB01D51F3F7EDE0060F19D /* RecipeViewController.swift in Sources */,
 				C5E7DF811F3D1FB60020E944 /* Chain.swift in Sources */,
 				C568F79C1F3CA22100646452 /* GameViewController.swift in Sources */,
 				C568F7941F3CA22100646452 /* AppDelegate.swift in Sources */,
